@@ -1,4 +1,6 @@
-# SmartRecipe Assistant
+# Layered software architecture
+
+## SmartRecipe Assistant
 
 SmartRecipe Assistant is a web-based application designed to help users manage their recipes, generate grocery lists, suggest meals based on ingredient availability, and compare grocery prices across local stores. Built with scalability, usability, and offline support in mind.
 
@@ -64,43 +66,8 @@ SmartRecipe Assistant is a web-based application designed to help users manage t
 | Dev Tools         | GitHub, VS Code      | Collaboration, IDE                   |
 | APIs              | Price compare API    | Store-based cost breakdown           |
 
----
-## Architecture diagram
-+----------------------------+
-|      Presentation Layer    |
-|    (React.js Frontend)     |
-|                            |
-| - Filter UI                |
-| - Recipe Viewer            |
-| - Grocery List View        |
-+----------------------------+
-            ↓
-+----------------------------+
-|      Application Layer      |
-|   (Express.js API Server)   |
-|                            |
-| - Generate Grocery List     |
-| - Suggest Recipes           |
-| - Handle Notes & Expiry     |
-+----------------------------+
-            ↓
-+----------------------------+
-|     Services & APIs Layer   |
-|                            |
-| - JWT / Firebase Auth       |
-| - Price Comparison API      |
-| - Health Suggestions API    |
-+----------------------------+
-            ↓
-+----------------------------+
-|         Data Layer          |
-|     (PostgreSQL / MongoDB)  |
-|                            |
-| - Recipes                   |
-| - Users                     |
-| - Notes / Ingredients       |
-+----------------------------+
 
+You can view the architecture diagram URL in [architecture-diagram.txt](./architecture-diagram.txt).
 
 ## 🧩 Linked Features (GitHub Issues)
 
