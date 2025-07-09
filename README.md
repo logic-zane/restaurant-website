@@ -65,6 +65,42 @@ SmartRecipe Assistant is a web-based application designed to help users manage t
 | APIs              | Price compare API    | Store-based cost breakdown           |
 
 ---
+## Architecture diagram
++----------------------------+
+|      Presentation Layer    |
+|    (React.js Frontend)     |
+|                            |
+| - Filter UI                |
+| - Recipe Viewer            |
+| - Grocery List View        |
++----------------------------+
+            ↓
++----------------------------+
+|      Application Layer      |
+|   (Express.js API Server)   |
+|                            |
+| - Generate Grocery List     |
+| - Suggest Recipes           |
+| - Handle Notes & Expiry     |
++----------------------------+
+            ↓
++----------------------------+
+|     Services & APIs Layer   |
+|                            |
+| - JWT / Firebase Auth       |
+| - Price Comparison API      |
+| - Health Suggestions API    |
++----------------------------+
+            ↓
++----------------------------+
+|         Data Layer          |
+|     (PostgreSQL / MongoDB)  |
+|                            |
+| - Recipes                   |
+| - Users                     |
+| - Notes / Ingredients       |
++----------------------------+
+
 
 ## 🧩 Linked Features (GitHub Issues)
 
